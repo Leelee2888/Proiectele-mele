@@ -1,0 +1,110 @@
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(files/cactus.jpg);
+  background-repeat: repeat;
+  text-align: center;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+  transform: rotate(90deg);
+  border-radius: 200px;
+  margin-top: 11px;
+  object-fit: cover;
+}
+
+table {
+  list-style-type: none;
+  padding-bottom: 15px;
+  margin: auto;
+}
+
+td {
+  padding: 15px;
+  border-radius: 200px;
+  box-shadow: hsla(0, 0%, 0%, .9) 10px 10px 10px;
+  background-color: hsla(0, 100%, 20%, 0.2);
+}
+
+td:hover {
+  background-color: khaki;
+  transition: background-color 1s;
+}
+
+#frame {
+  height: 95%;
+  width: 95%;
+  max-width: 1000px;
+  background-color: hsla(0, 100%, 1000%, 0.6);
+  border-radius: 40px;
+  box-shadow: hsla(0, 0%, 0%, .9) 20px 20px 30px;
+  margin: auto;
+  margin-top: 60px;
+}
+
+#content {
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-size: 24px;
+  color: black
+}
+
+#name-headline,
+#selection {
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+li {
+  padding-left: 10px;
+  padding-right: 50px;
+}
+
+img:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(90deg);
+  }
+
+  10% {
+    transform: translate(-1px, -2px) rotate(89deg);
+  }
+
+  20% {
+    transform: translate(-3px, 0px) rotate(91deg);
+  }
+
+  30% {
+    transform: translate(3px, 2px) rotate(90deg);
+  }
+
+  40% {
+    transform: translate(1px, -1px) rotate(91deg);
+  }
+
+  50% {
+    transform: translate(-1px, 2px) rotate(89deg);
+  }
+
+  60% {
+    transform: translate(-3px, 1px) rotate(90deg);
+  }
+
+  70% {
+    transform: translate(3px, 1px) rotate(89deg);
+  }
+
+  80% {
+    transform: translate(-1px, -1px) rotate(91deg);
+  }
+
+  90% {
+    transform: translate(1px, 2px) rotate(90deg);
+  }
+
+  100% {
+    transform: translate(1px, -2px) rotate(89deg);
+  }
+}
